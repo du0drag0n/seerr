@@ -54,6 +54,12 @@ workflows:
         - 'docker/login-action@v4.6.0'
         - 'oras-project/setup-oras@v2.0.1'
         - 'sigstore/cosign-installer@v4.1.2'
+    '.github/workflows/lemoncore-image.yml':
+        - 'actions/checkout@v7.0.1'
+        - 'docker/build-push-action@v7.3.0'
+        - 'docker/login-action@v4.6.0'
+        - 'docker/metadata-action@v6.2.0'
+        - 'docker/setup-buildx-action@v4.3.0'
     '.github/workflows/lint-helm-charts.yml':
         - 'actions/checkout@v7.0.1'
         - 'azure/setup-helm@v5.0.1'
